@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 100px;
+    background-color: #604829;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.header__img {
+    width: 100px;
+    margin-left: 15% ;
+}
+
+.header__navbar {
+    margin-right: 15%;
+}
+
+.header__navbar__lista {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.header__navbar__lista__item a {
+    font-size: 18px;
+    color: #c4a47c;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 3px 4px 2px #000000;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* PRIMEIRA SECAO */ 
+
+#banner {
+    background-image: url(/assets/img/parallax-imagem1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__titulo {
+    color: #fff;
+    font-size: 80px;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 300;
+}
+
+/* SEGUNDA SECÃO */
+
+.informacoes__titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    color: #c4a47c;
+    text-align: center;
+    margin-bottom: 30px;
+    
+}
+
+.informacoes__texto {
+    padding: 0 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 32px;
+}
+
+.informacoes__container {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    
+}
+
+/* IMAGEM PARALAX 2 */
+
+.informacoes__container--paralax__dois {
+    background-image: url(/assets/img/parallax-imagem2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.informacoes__container__titulo {
+    width: 500px;
+    padding: 10px;
+    background-color: #604829;
+    text-align: center;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* IMAGEM PARALAX 3 */
+
+.informacoes__container--paralax__tres {
+    background-image: url(/assets/img/parallax-imagem3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+    
+}
+
+/* TERCEIRA SEÇÃO */ 
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 0;
+    background-image: url(/assets/img/parallax-imagem4.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.informacoes__container__titulo--normal {
+    font-style: normal;
+    margin-bottom: 45px;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.contatos__container {
+    background-color: #604829;
+    text-align: center;
+    margin-top: 60px;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 4px 5px #000000;
+}
+
+/* QUARTA SEÇÃO */ 
+
+#horarios {
+    background-image: url(/assets/img/cafeteria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+}
+
+.horarios__titulo {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 80px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+.horarios__lista {
+    max-width: 768px;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+    list-style: none;
+    color: #fff;
+}
+
+.horarios__lista li {
+    /* tag <li> */
+    position: relative;
+}
+
+.horarios__lista li h3 {
+    /* subtitulo = <h3> */
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.horarios__lista li div {
+    /* tarja = <div> */
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background-color: #ACACAC
+}
+
+.horarios__lista li p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.texto-marrom {
+    /* paragrafo + span*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+}
+
+.texto-marrom {
+    color: #c4a47c;
+}
+
+.lista-horarios li p {
+    color: #ACACAC;
+}
+
+/* RODAPE */ 
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+    background-color: #000000;
+    position: relative;
+}
+
+.rodape p {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.rodape a {
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+}
+
+
+
